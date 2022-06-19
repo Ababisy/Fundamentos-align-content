@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align content</title>
+<style>
+    .container {
+        height: 250px;
+        max-width: 300;       
+        display: flex;
+        flex-wrap: wrap;
+        border: 5px solid black;
+    }
+    .item{
+        background-color: orange;
+        padding: 0 5px;
+        flex: 1;
+        margin: 5px;
+        text-align: center;
+        color: rgb(11, 22, 243);
+    }
+    .stretch {
+        align-content: stretch;
+    }
+    .center {
+        align-content: center;
+    }
+    .flex-start{
+        align-content: flex-start;
+    }
+    .flex-end{
+        align-content: flex-end;
+    }
+    .space-between{
+        align-content: space-between;
+    }
+    .space-around{
+        align-content: space-around;
+    }
+</style>
+</head>
+<body>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">texto teste</div>
+        <div class="item">texto teste texto teste</div>
+        <div class="item">texto teste</div>
+        <div class="item">texto teste</div>
+        <div class="item"> texto teste texto teste texto teste texto teste</div>
+        <div class="item">texto teste texto teste texto teste</div>
+        <div class="item">texto teste texto teste</div>
+    </div>
+
+    <P>center</P>
+    <div class="container center">
+        <div class="item">texto teste</div>
+        <div class="item">texto teste texto teste</div>
+        <div class="item">texto teste</div>
+        <div class="item">texto teste</div>
+        <div class="item">texto teste texto teste texto teste texto teste</div>
+        <div class="item">texto teste texto teste texto teste</div>
+        <div class="item">texto teste texto teste</div>
+    </div>
+
+    <P>flex-start</P>
+    <div class="container flex-start">
+        <div class="item">texto teste</div>
+        <div class="item">texto teste texto teste</div>
+        <div class="item">texto teste</div>
+        <div class="item">texto teste</div>
+        <div class="item">texto teste texto teste texto teste texto teste</div>
+        <div class="item">texto teste texto teste texto teste</div>
+        <div class="item">texto teste texto teste</div>
+    </div>
+
+    <P>flex-end</P>
+    <div class="container flex-end">
+        <div class="item">texto teste</div>
+        <div class="item">texto teste texto teste</div>
+        <div class="item">texto teste</div>
+        <div class="item">texto teste</div>
+        <div class="item">texto teste texto teste texto teste texto teste</div>
+        <div class="item">texto teste texto teste texto teste</div>
+        <div class="item">texto teste texto teste</div>
+    </div>
+
+    <P>space-between</P>
+    <div class="container space-between">
+        <div class="item">texto teste</div>
+        <div class="item">texto teste texto teste</div>
+        <div class="item">texto teste</div>
+        <div class="item">texto teste</div>
+        <div class="item">texto teste texto teste texto teste texto teste</div>
+        <div class="item">texto teste texto teste texto teste</div>
+        <div class="item">texto teste texto teste</div>
+    </div>
+
+    <P>space-around</P>
+    <div class="container space-around">
+        <div class="item">texto teste</div>
+        <div class="item">texto teste texto teste</div>
+        <div class="item">texto teste</div>
+        <div class="item">texto teste</div>
+        <div class="item">texto teste texto teste texto teste texto teste</div>
+        <div class="item">texto teste texto teste texto teste</div>
+        <div class="item">texto teste texto teste</div>
+    </div>
+</body>
+</html>
